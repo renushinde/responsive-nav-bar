@@ -155,3 +155,45 @@ p {
     background-color: orangered;
     color: seashell;
 }
+.sub-menu {
+    display: none;
+
+}
+.nav-links li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: orangered;
+    margin-top: 15px;
+    margin-left:- 15px;
+}
+
+.nav-links li:hover .sub-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.nav-links li:hover .sub-menu li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+}
+
+.nav-links li:hover .sub-menu ul a:hover {
+    color: seashell;
+}
+
+.menu-bar {
+    text-align: center;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar li {
+    margin: 15px;
+    padding: 15px;
+}
