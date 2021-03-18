@@ -150,3 +150,8 @@ p {
     background: salmon;
     color: seashell;
 }
+
+.active, .nav-links li:hover {
+    background-color: orangered;
+    color: seashell;
+}
