@@ -28,15 +28,20 @@ nav {
     display: flex;
     width: 30%;
     justify-content: space-around;
+    
 }
 .nav-links li{
     list-style: none;
+    margin: 15px;
+    padding: 10px;
+    
 }
 .nav-links a {
     color: seashell;
     text-decoration: none;
     letter-spacing: 3px;
     font-size: 14px;
+    
 }
 .burger{
     display: none;
@@ -67,7 +72,6 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        color: black;
         /* background-color: salmon; */
         display: flex;
         flex-direction: column;
@@ -83,6 +87,28 @@ nav {
     .burger{
         display: block;
     }
+    .sub-menu {
+    display: none;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 50vh;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    .sub-menu a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin: 15px;
+    }
+
 }
  .nav-active {
     transform: translateX(0%);
@@ -150,3 +176,50 @@ p {
     background: salmon;
     color: seashell;
 }
+
+.active, .nav-links li:hover {
+    background-color: orangered;
+    color: seashell;
+}
+.sub-menu {
+    display: none;
+
+}
+.nav-links li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: orangered;
+    margin-top: 15px;
+    margin-left:- 15px;
+}
+
+.nav-links li:hover .sub-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.nav-links li:hover .sub-menu li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+}
+
+.nav-links li:hover .sub-menu ul a:hover {
+    color: seashell;
+}
+
+/* .menu-bar {
+    text-align: center;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+*/
+ .menu-bar li {
+    margin: 15px;
+    padding: 15px;
+} 
